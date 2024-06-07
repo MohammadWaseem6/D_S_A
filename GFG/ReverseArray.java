@@ -11,6 +11,7 @@ public class ReverseArray {
         }
         return 0;
     }
+    //reverse array
     public static void main(String[] args) {
         int arr []= {5,4,3,2,1};
         revArray(arr);
