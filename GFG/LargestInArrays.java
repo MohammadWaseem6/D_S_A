@@ -11,7 +11,7 @@ public class LargestInArrays {
         }
         return larg;
     }
-//L:S
+
     public static void main(String[] args) {
         int arr[] = { 1, 2, 5, 6, 7, 3 };
         System.out.println("Largest number is: " + largest(arr));
