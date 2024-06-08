@@ -9,8 +9,7 @@ public class PairsInArray {
             }
             System.out.println("total pairs = "+ totalpairs);
         }
-        
-
+   
     }
 
     public static void main(String[] args) {
