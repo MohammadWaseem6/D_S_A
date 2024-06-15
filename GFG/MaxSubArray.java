@@ -1,5 +1,4 @@
 public class MaxSubArray {
-
     public static void Printmaxsubarray(int[] array) {
         int currsum = 0;
         int maxsum = Integer.MIN_VALUE;
@@ -16,13 +15,10 @@ public class MaxSubArray {
         System.out.println(maxsum);
     }
 
-    public static void main(String[] args) {
-        int arr[] = { 1, -2, 6, -1, 3 };
-        Printmaxsubarray(arr);
 
-    public static voif Printmaxsubarray(int[] array){
-    
-    }
+
+
+  
     public static void main(String[] args) {
         int arr[] = { 1, 2, -1, 3, -4, 5, -1, -2, 4 };
 
