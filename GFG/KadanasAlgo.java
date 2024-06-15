@@ -23,12 +23,13 @@ public class KadanasAlgo {
         }
 
         // Print the maximum subarray sum
+        System.out.println("Our currsum is = " + cs);
         System.out.println("Our maximum sub array sum is = " + ms);
     }
 
     public static void main(String[] args) {
         // Example array of numbers
-        int numbers[] = { 1,-2,-3,5,-6,7};
+        int numbers[] = { 2, 3, 5, -6, -5, 4 };
 
         // Call the kadans function with the example array
         kadans(numbers);
