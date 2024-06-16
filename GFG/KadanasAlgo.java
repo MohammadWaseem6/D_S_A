@@ -1,6 +1,6 @@
 public class KadanasAlgo {
 
-    // Function to find the maximum subarray sum using Kadane's Algorithm
+    
     public static void kadans(int numbers[]) {
         // Initialize the maximum sum (ms) to the smallest possible integer value
         int ms = Integer.MIN_VALUE;
@@ -34,5 +34,6 @@ public class KadanasAlgo {
         // Call the kadans function with the example array
         kadans(numbers);
     }
+    
 
 }
