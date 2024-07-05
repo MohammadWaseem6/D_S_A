@@ -53,6 +53,6 @@ public class MergeSort {
     public static void main(String[] args) {
         int arr[] = { 8, 6, 2, 9, 5, 1 };
         Mergesort(arr, 0, arr.length - 1);
-        PrintArr(arr); // Print the sorted array
+        PrintArr(arr); 
     }
 }
