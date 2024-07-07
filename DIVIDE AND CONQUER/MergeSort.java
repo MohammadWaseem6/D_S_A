@@ -53,11 +53,15 @@ public class DIVIDE AND CONQUER {
     }
 
     public static void main(String[] args) {
-        int arr[] = {6, 3, 9, 5, 2, 8};
+
+        int arr[] = { 8, 6, 2, 9, 5, 1 };
+     
+        
         System.out.print("Original array: ");
         printArr(arr);
         mergeSort(arr, 0, arr.length - 1);
         System.out.print("Sorted array: ");
-        printArr(arr);
+     
+
     }
 }
