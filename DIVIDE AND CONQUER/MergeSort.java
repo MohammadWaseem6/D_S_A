@@ -1,27 +1,28 @@
-public class MergeSort {
+public class DIVIDE AND CONQUER {
 
-    public static void PrintArr(int arr[]) {
+    public static void printArr(int arr[]) {
         for (int i = 0; i < arr.length; i++) {
-            System.out.print(arr[i] + "   ");
+            System.out.print(arr[i] + " ");
         }
         System.out.println();
     }
 
-    public static void Mergesort(int arr[], int si, int ei) {
+    // Recursive function
+    public static void mergeSort(int arr[], int si, int ei) {
         if (si >= ei) {
             return;
         }
-
-        int mid = si + (ei - si) / 2; // Correct calculation of mid
-        Mergesort(arr, si, mid); // left part
-        Mergesort(arr, mid + 1, ei); // right part
-        merge(arr, si, mid, ei); // merge the sorted halves
+        int mid = si + (ei - si) / 2; // mid = (si + ei) / 2
+        mergeSort(arr, si, mid); // left part
+        mergeSort(arr, mid + 1, ei); // right part
+        merge(arr, si, mid, ei);
     }
 
+    // For merging an array
     public static void merge(int arr[], int si, int mid, int ei) {
         int temp[] = new int[ei - si + 1];
-        int i = si;
-        int j = mid + 1;
+        int i = si; // for left part iterator
+        int j = mid + 1; // for right part iterator
         int k = 0;
 
         while (i <= mid && j <= ei) {
@@ -39,20 +40,28 @@ public class MergeSort {
         while (i <= mid) {
             temp[k++] = arr[i++];
         }
+
         // right part
         while (j <= ei) {
             temp[k++] = arr[j++];
         }
 
-        // copy temp array to original array
+        // copy temp to original
         for (k = 0, i = si; k < temp.length; k++, i++) {
             arr[i] = temp[k];
         }
     }
 
     public static void main(String[] args) {
+
         int arr[] = { 8, 6, 2, 9, 5, 1 };
-        Mergesort(arr, 0, arr.length - 1);
-        PrintArr(arr); 
+     
+        
+        System.out.print("Original array: ");
+        printArr(arr);
+        mergeSort(arr, 0, arr.length - 1);
+        System.out.print("Sorted array: ");
+     
+
     }
 }
