@@ -1,7 +1,6 @@
 public class QuickSort {
 
-    // Method to print the array
-    public static void printArray(int arr[]) {
+       public static void printArray(int arr[]) {
         // Loop through the array and print each element
         for (int i = 0; i < arr.length; i++) {
             System.out.print(arr[i] + " ");
