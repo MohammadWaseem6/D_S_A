@@ -1,12 +1,12 @@
 public class Arrays {
 
-    public static void ChangeArray(int arr[], int value, int index) {
+    public static void ChangeArray(int arr[], int index, int value) {
         if (index == arr.length) {
             printArray(arr);
             return;
         }
         arr[index] = value;
-        ChangeArray(arr, value + 1, index + 1);
+        ChangeArray(arr, index + 1, value + 1);
         arr[index] = arr[index] - 2;
     }
 
@@ -19,7 +19,7 @@ public class Arrays {
 
     public static void main(String[] args) {
         int arr[] = new int[5];
-        ChangeArray(arr, 1, 0);
+        ChangeArray(arr, 0, 1);
         printArray(arr);
     }
 }
